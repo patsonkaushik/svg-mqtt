@@ -1,0 +1,502 @@
+
+<html>
+    <head>
+        <title>test</title>
+    </head>
+    <body>
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.2/mqttws31.min.js" type="text/javascript"></script>
+        <svg id=mySVG width="1265" height="544" shape-rendering="geometricPrecision" xmlns:a="http://www.adobe.com/svg10-extensions">
+            <g id="SEllipse1" fill="url(#_GradL1502X02X02X4A02X02X02X0NA_)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 24 125 C 24 69 70 24 124 24 179 24 224 69 224 125 224 180 179 226 124 226 70 226 24 180 24 125 Z "/>
+               <g fill="rgb(0,0,0)" fill-opacity="1" fill-rule="evenodd" stroke="none" font-family="Segoe UI" font-size="-12.00pt" text-anchor="middle" xml:space="preserve"></g>
+            </g>
+            <defs>
+               <radialGradient id="_GradL1502X02X02X4A02X02X02X0NA_" gradientUnits="objectBoundingBox" fx="0.50" fy="0.50">
+                  <stop offset="0.000" stop-color="rgb(74,135,202)" stop-opacity="1.0"/>
+                  <stop offset="1.000" stop-color="rgb(21,45,70)" stop-opacity="1.0"/>
+               </radialGradient>
+            </defs>
+            <g id="xcustom1" fill="url(#_GradL1502X02X02X4A02X02X02X0NA_)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 202 182 L 203 182 202 182 Z "/>
+            </g>
+            <defs>
+               <radialGradient id="_GradL1502X02X02X4A02X02X02X0NA_" gradientUnits="objectBoundingBox" fx="0.50" fy="0.50">
+                  <stop offset="0.000" stop-color="rgb(74,135,202)" stop-opacity="1.0"/>
+                  <stop offset="1.000" stop-color="rgb(21,45,70)" stop-opacity="1.0"/>
+               </radialGradient>
+            </defs>
+            <g id="xcustom2" fill="url(#_GradL1502X02X02X4A02X02X02X0NA_)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 103 27 L 112 15 137 15 146 26 103 27 Z "/>
+               <g fill="rgb(0,0,0)" fill-opacity="1" fill-rule="evenodd" stroke="none" font-family="Segoe UI" font-size="-12.00pt" text-anchor="middle" xml:space="preserve"></g>
+            </g>
+            <defs>
+               <radialGradient id="_GradL1502X02X02X4A02X02X02X0NA_" gradientUnits="objectBoundingBox" fx="0.50" fy="0.50">
+                  <stop offset="0.000" stop-color="rgb(74,135,202)" stop-opacity="1.0"/>
+                  <stop offset="1.000" stop-color="rgb(21,45,70)" stop-opacity="1.0"/>
+               </radialGradient>
+            </defs>
+            <g id="xcustom3" fill="url(#_GradL1502X02X02X4A02X02X02X0NA_)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 162 33 L 175 28 196 42 197 56 162 33 Z "/>
+               <g fill="rgb(0,0,0)" fill-opacity="1" fill-rule="evenodd" stroke="none" font-family="Segoe UI" font-size="-12.00pt" text-anchor="middle" xml:space="preserve"></g>
+            </g>
+            <defs>
+               <radialGradient id="_GradL1502X02X02X4A02X02X02X0NA_" gradientUnits="objectBoundingBox" fx="0.50" fy="0.50">
+                  <stop offset="0.000" stop-color="rgb(74,135,202)" stop-opacity="1.0"/>
+                  <stop offset="1.000" stop-color="rgb(21,45,70)" stop-opacity="1.0"/>
+               </radialGradient>
+            </defs>
+            <g id="xcustom4" fill="url(#_GradL1502X02X02X4A02X02X02X0NA_)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 205 67 L 220 70 229 94 222 106 205 67 Z "/>
+               <g fill="rgb(0,0,0)" fill-opacity="1" fill-rule="evenodd" stroke="none" font-family="Segoe UI" font-size="-12.00pt" text-anchor="middle" xml:space="preserve"></g>
+            </g>
+            <defs>
+               <radialGradient id="_GradL1502X02X02X4A02X02X02X0NA_" gradientUnits="objectBoundingBox" fx="0.50" fy="0.50">
+                  <stop offset="0.000" stop-color="rgb(74,135,202)" stop-opacity="1.0"/>
+                  <stop offset="1.000" stop-color="rgb(21,45,70)" stop-opacity="1.0"/>
+               </radialGradient>
+            </defs>
+            <g id="xcustom5" fill="url(#_GradL1502X02X02X4A02X02X02X0NA_)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 212 172 L 216 186 200 206 186 206 212 172 Z "/>
+               <g fill="rgb(0,0,0)" fill-opacity="1" fill-rule="evenodd" stroke="none" font-family="Segoe UI" font-size="-12.00pt" text-anchor="middle" xml:space="preserve"></g>
+            </g>
+            <defs>
+               <radialGradient id="_GradL1502X02X02X4A02X02X02X0NA_" gradientUnits="objectBoundingBox" fx="0.50" fy="0.50">
+                  <stop offset="0.000" stop-color="rgb(74,135,202)" stop-opacity="1.0"/>
+                  <stop offset="1.000" stop-color="rgb(21,45,70)" stop-opacity="1.0"/>
+               </radialGradient>
+            </defs>
+            <g id="xcustom6" fill="url(#_GradL1502X02X02X4A02X02X02X0NA_)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 174 213 L 170 227 146 235 134 226 174 213 Z "/>
+               <g fill="rgb(0,0,0)" fill-opacity="1" fill-rule="evenodd" stroke="none" font-family="Segoe UI" font-size="-12.00pt" text-anchor="middle" xml:space="preserve"></g>
+            </g>
+            <defs>
+               <radialGradient id="_GradL1502X02X02X4A02X02X02X0NA_" gradientUnits="objectBoundingBox" fx="0.50" fy="0.50">
+                  <stop offset="0.000" stop-color="rgb(74,135,202)" stop-opacity="1.0"/>
+                  <stop offset="1.000" stop-color="rgb(21,45,70)" stop-opacity="1.0"/>
+               </radialGradient>
+            </defs>
+            <g id="xcustom7" fill="url(#_GradL1502X02X02X4A02X02X02X0NA_)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 51 55 L 52 40 73 26 86 31 51 55 Z "/>
+               <g fill="rgb(0,0,0)" fill-opacity="1" fill-rule="evenodd" stroke="none" font-family="Segoe UI" font-size="-12.00pt" text-anchor="middle" xml:space="preserve"></g>
+            </g>
+            <defs>
+               <radialGradient id="_GradL1502X02X02X4A02X02X02X0NA_" gradientUnits="objectBoundingBox" fx="0.50" fy="0.50">
+                  <stop offset="0.000" stop-color="rgb(74,135,202)" stop-opacity="1.0"/>
+                  <stop offset="1.000" stop-color="rgb(21,45,70)" stop-opacity="1.0"/>
+               </radialGradient>
+            </defs>
+            <g id="xcustom8" fill="url(#_GradL1502X02X02X4A02X02X02X0NA_)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 26 103 L 19 90 31 67 45 65 26 103 Z "/>
+               <g fill="rgb(0,0,0)" fill-opacity="1" fill-rule="evenodd" stroke="none" font-family="Segoe UI" font-size="-12.00pt" text-anchor="middle" xml:space="preserve"></g>
+            </g>
+            <defs>
+               <radialGradient id="_GradL1502X02X02X4A02X02X02X0NA_" gradientUnits="objectBoundingBox" fx="0.50" fy="0.50">
+                  <stop offset="0.000" stop-color="rgb(74,135,202)" stop-opacity="1.0"/>
+                  <stop offset="1.000" stop-color="rgb(21,45,70)" stop-opacity="1.0"/>
+               </radialGradient>
+            </defs>
+            <g id="xcustom9" fill="url(#_GradL1502X02X02X4A02X02X02X0NA_)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 118 226 L 106 235 81 228 77 214 118 226 Z "/>
+               <g fill="rgb(0,0,0)" fill-opacity="1" fill-rule="evenodd" stroke="none" font-family="Segoe UI" font-size="-12.00pt" text-anchor="middle" xml:space="preserve"></g>
+            </g>
+            <defs>
+               <radialGradient id="_GradL1502X02X02X4A02X02X02X0NA_" gradientUnits="objectBoundingBox" fx="0.50" fy="0.50">
+                  <stop offset="0.000" stop-color="rgb(74,135,202)" stop-opacity="1.0"/>
+                  <stop offset="1.000" stop-color="rgb(21,45,70)" stop-opacity="1.0"/>
+               </radialGradient>
+            </defs>
+            <g id="xcustom10" fill="url(#_GradL1502X02X02X4A02X02X02X0NA_)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 224 118 L 235 128 231 153 218 160 224 118 Z "/>
+               <g fill="rgb(0,0,0)" fill-opacity="1" fill-rule="evenodd" stroke="none" font-family="Segoe UI" font-size="-12.00pt" text-anchor="middle" xml:space="preserve"></g>
+            </g>
+            <defs>
+               <radialGradient id="_GradL1502X02X02X4A02X02X02X0NA_" gradientUnits="objectBoundingBox" fx="0.50" fy="0.50">
+                  <stop offset="0.000" stop-color="rgb(74,135,202)" stop-opacity="1.0"/>
+                  <stop offset="1.000" stop-color="rgb(21,45,70)" stop-opacity="1.0"/>
+               </radialGradient>
+            </defs>
+            <g id="xcustom11" fill="url(#_GradL1502X02X02X4A02X02X02X0NA_)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 66 208 L 52 210 35 191 37 177 66 208 Z "/>
+               <g fill="rgb(0,0,0)" fill-opacity="1" fill-rule="evenodd" stroke="none" font-family="Segoe UI" font-size="-12.00pt" text-anchor="middle" xml:space="preserve"></g>
+            </g>
+            <defs>
+               <radialGradient id="_GradL1502X02X02X4A02X02X02X0NA_" gradientUnits="objectBoundingBox" fx="0.50" fy="0.50">
+                  <stop offset="0.000" stop-color="rgb(74,135,202)" stop-opacity="1.0"/>
+                  <stop offset="1.000" stop-color="rgb(21,45,70)" stop-opacity="1.0"/>
+               </radialGradient>
+            </defs>
+            <g id="xcustom12" fill="url(#_GradL1502X02X02X4A02X02X02X0NA_)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 33 164 L 19 158 15 132 24 122 33 164 Z "/>
+               <g fill="rgb(0,0,0)" fill-opacity="1" fill-rule="evenodd" stroke="none" font-family="Segoe UI" font-size="-12.00pt" text-anchor="middle" xml:space="preserve"></g>
+            </g>
+            <defs>
+               <radialGradient id="_GradL1502X02X02X4A02X02X02X0NA_" gradientUnits="objectBoundingBox" fx="0.50" fy="0.50">
+                  <stop offset="0.000" stop-color="rgb(74,135,202)" stop-opacity="1.0"/>
+                  <stop offset="1.000" stop-color="rgb(21,45,70)" stop-opacity="1.0"/>
+               </radialGradient>
+            </defs>
+            <g id="SEllipse5" fill="url(#_GradL0002X02X02X5902X02X02X0NA_)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 282 124 C 282 66 329 19 387 19 444 19 491 66 491 124 491 181 444 228 387 228 329 228 282 181 282 124 Z "/>
+            </g>
+            <defs>
+               <linearGradient id="_GradL0002X02X02X5902X02X02X0NA_" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0.000" stop-color="rgb(89,89,89)" stop-opacity="1.0"/>
+                  <stop offset="1.000" stop-color="rgb(0,0,0)" stop-opacity="1.0"/>
+               </linearGradient>
+            </defs>
+            <g id="xcustom1" fill="url(#_GradLFF02X02X02X8502X02X02X0NA_)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <rect x="510" y="11" width="72" height="231" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(255,255,0)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 214 531 210 525 210 525 214 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 204 531 200 525 200 525 204 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 195 531 191 525 191 525 195 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 185 531 181 525 181 525 185 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 176 531 172 525 172 525 176 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 166 531 162 525 162 525 166 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 157 531 153 525 153 525 157 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 147 531 143 525 143 525 147 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 138 531 134 525 134 525 138 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 118 531 114 525 114 525 118 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 109 531 105 525 105 525 109 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 99 531 95 525 95 525 99 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 90 531 86 525 86 525 90 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 80 531 76 525 76 525 80 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 71 531 67 525 67 525 71 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 61 531 57 525 57 525 61 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 52 531 48 525 48 525 52 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 42 531 38 525 38 525 42 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 214 531 210 525 210 525 214 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 204 531 200 525 200 525 204 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 195 531 191 525 191 525 195 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 185 531 181 525 181 525 185 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 176 531 172 525 172 525 176 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 166 531 162 525 162 525 166 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 157 531 153 525 153 525 157 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 147 531 143 525 143 525 147 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 138 531 134 525 134 525 138 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 118 531 114 525 114 525 118 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 109 531 105 525 105 525 109 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 99 531 95 525 95 525 99 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 90 531 86 525 86 525 90 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 80 531 76 525 76 525 80 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 71 531 67 525 67 525 71 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 61 531 57 525 57 525 61 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 52 531 48 525 48 525 52 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="531 42 531 38 525 38 525 42 " stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(218,48,160)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="535 225 535 221 523 221 523 225 " stroke="rgb(218,48,160)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(255,194,14)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="535 129 535 125 523 125 523 129 " stroke="rgb(218,48,160)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(255,194,14)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="535 34 535 30 523 30 523 34 " stroke="rgb(218,48,160)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(255,194,14)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="534 224 534 220 522 220 522 224 " stroke="rgb(218,48,160)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(255,194,14)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="534 128 534 124 522 124 522 128 " stroke="rgb(218,48,160)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(255,194,14)" fill-opacity="1" fill-rule="evenodd"/>
+               <polygon points="534 33 534 29 522 29 522 33 " stroke="rgb(218,48,160)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(255,194,14)" fill-opacity="1" fill-rule="evenodd"/>
+               <g fill="rgb(240,240,240)" fill-opacity="1" fill-rule="evenodd" stroke="none" font-family="Arial" font-size="14.00pt" font-weight="bold" text-anchor="start" xml:space="preserve">
+                  <text x="544" y="235" >0</text>
+               </g>
+               <g fill="rgb(240,240,240)" fill-opacity="1" fill-rule="evenodd" stroke="none" font-family="Arial" font-size="14.00pt" font-weight="bold" text-anchor="start" xml:space="preserve">
+                  <text x="544" y="139" >50</text>
+               </g>
+               <g fill="rgb(240,240,240)" fill-opacity="1" fill-rule="evenodd" stroke="none" font-family="Arial" font-size="14.00pt" font-weight="bold" text-anchor="start" xml:space="preserve">
+                  <text x="544" y="44" >100</text>
+               </g>
+               <g fill="rgb(0,0,0)" fill-opacity="1" fill-rule="evenodd" stroke="none" font-family="Arial" font-size="14.00pt" font-weight="bold" text-anchor="start" xml:space="preserve">
+                  <text x="544" y="235" >0</text>
+               </g>
+               <g fill="rgb(0,0,0)" fill-opacity="1" fill-rule="evenodd" stroke="none" font-family="Arial" font-size="14.00pt" font-weight="bold" text-anchor="start" xml:space="preserve">
+                  <text x="544" y="139" >50</text>
+               </g>
+               <g fill="rgb(0,0,0)" fill-opacity="1" fill-rule="evenodd" stroke="none" font-family="Arial" font-size="14.00pt" font-weight="bold" text-anchor="start" xml:space="preserve">
+                  <text x="544" y="44" >100</text>
+               </g>
+               <rect id="thermometer" fill="#0000FF" opacity="1" x="510" width="72" y="225" height="0"></rect>
+               
+               <polygon points="523 220 562 220 562 224 523 224 " stroke="rgb(0,0,255)" stroke-opacity="1" stroke-width="42" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(255,0,0)" fill-opacity="1" fill-rule="evenodd" style="visibility: hidden;"/>
+               
+               <g fill="rgb(0,0,0)" fill-opacity="1" fill-rule="evenodd" stroke="none" font-family="Tahoma" font-size="9.00pt" text-anchor="middle" xml:space="preserve">
+                  <text id="text_266468476" x= "546" y= "129" >gauge</text>
+               </g>
+            </g>
+            <defs>
+               <linearGradient id="_GradLFF02X02X02X8502X02X02X0NA_" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0.000" stop-color="rgb(133,164,70)" stop-opacity="1.0"/>
+                  <stop offset="0.500" stop-color="rgb(255,255,0)" stop-opacity="1.0"/>
+                  <stop offset="1.000" stop-color="rgb(133,164,70)" stop-opacity="1.0"/>
+               </linearGradient>
+            </defs>
+            <g id="xcustom1" fill="url(#_GradLFF02X02X02X0002X02X02X0NA_)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <rect x="18" y="253" width="149" height="259"/>
+               <rect x="18" y="253" width="149" height="259"/>
+            </g>
+            <defs>
+               <linearGradient id="_GradLFF02X02X02X0002X02X02X0NA_" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0.000" stop-color="rgb(255,255,0)" stop-opacity="1.0"/>
+                  <stop offset="0.500" stop-color="rgb(0,176,80)" stop-opacity="1.0"/>
+                  <stop offset="1.000" stop-color="rgb(255,255,0)" stop-opacity="1.0"/>
+               </linearGradient>
+            </defs>
+            <g id="xcustom1" fill="rgb(255,255,255)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 205 347 C 205 295 248 252 300 252 352 252 395 295 395 347 395 399 352 442 300 442 248 442 205 399 205 347 Z "/>
+            </g>
+            <g id="xcustom50" fill="rgb(153,153,153)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 698 99 L 686 102 674 102 662 99 651 93 642 84 636 73 633 62 633 49 636 38 642 27 651 18 662 12 674 9 686 9 698 12 709 18 718 27 724 38 727 49 727 62 724 73 718 84 709 93 698 99 698 99 Z "/>
+            </g>
+            <g id="xcustom51" fill="rgb(229,229,229)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(178,178,178)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 666 95 L 655 90 647 82 641 73 638 61 638 50 641 39 647 30 655 21 665 16 676 13 687 13 698 16 707 22 716 31 694 22 651 78 666 95 666 95 Z "/>
+            </g>
+            <g id="xcustom52" fill="rgb(51,51,51)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(51,51,51)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 698 99 L 686 102 674 102 646 72 692 18 724 38 727 49 727 62 724 74 718 84 709 93 698 99 698 99 Z "/>
+            </g>
+            <g id="xcustom53" fill="rgb(0,153,51)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 694 90 L 685 92 675 92 666 90 658 85 651 78 646 69 643 61 643 51 646 42 651 33 658 26 666 22 675 19 685 19 694 22 703 26 710 33 714 42 717 51 717 61 714 69 710 78 703 85 694 90 694 90 Z "/>
+            </g>
+            <g id="xcustom54" fill="rgb(51,204,51)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 686 82 L 677 84 667 84 658 82 650 77 643 70 638 62 635 53 635 43 638 34 643 25 649 19 658 14 667 11 677 11 686 14 695 19 701 25 706 34 709 43 709 53 706 62 701 70 695 77 686 82 686 82 Z "/>
+            </g>
+            <g id="xcustom55" fill="none" stroke="rgb(49,179,49)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 678 76 L 667 76 656 71 648 64 644 53 644 42 648 32 656 24 666 20 678 20 688 24 696 32 700 42 700 53 696 64 688 71 678 76 "/>
+            </g>
+            <g id="xcustom56" fill="none" stroke="rgb(49,179,49)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 677 71 L 667 71 659 68 652 61 648 53 648 43 652 35 659 28 667 24 677 24 686 28 692 35 696 43 696 53 692 61 686 68 677 71 "/>
+            </g>
+            <g id="xcustom57" fill="rgb(153,153,153)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 698 100 L 686 103 674 103 662 100 651 94 642 85 636 74 633 63 633 50 636 39 642 28 651 19 662 13 674 10 686 10 698 13 709 19 718 28 724 39 727 50 727 63 724 74 718 85 709 94 698 100 698 100 Z "/>
+            </g>
+            <g id="xcustom58" fill="rgb(229,229,229)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(178,178,178)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 666 96 L 655 91 647 83 641 74 638 62 638 51 641 40 647 31 655 22 665 17 676 14 687 14 698 17 707 23 716 32 694 23 651 79 666 96 666 96 Z "/>
+            </g>
+            <g id="xcustom59" fill="rgb(51,51,51)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(51,51,51)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 698 100 L 686 103 674 103 646 73 692 19 724 39 727 50 727 63 724 75 718 85 709 94 698 100 698 100 Z "/>
+            </g>
+            <g id="xcustom60" fill="rgb(255,0,0)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" onclick="btnClickXcustom60()">
+               <path d="M 694 91 L 685 93 675 93 666 91 658 86 651 79 646 70 643 62 643 52 646 43 651 34 658 27 666 23 675 20 685 20 694 23 703 27 710 34 714 43 717 52 717 62 714 70 710 79 703 86 694 91 694 91 Z "/>
+            </g>
+            <g id="K1" fill="url(#_GradL5C02X02X02X5D02X02X02X0NA_)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(255,0,0)" stroke-opacity="1" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 775 35 L 829 13 883 34 906 88 884 142 830 165 776 143 754 89 775 35 775 35 Z " stroke="none"/>
+               <g fill="rgb(0,0,0)" fill-opacity="1" fill-rule="evenodd" stroke="none" font-family="Segoe UI" font-size="-12.00pt" text-anchor="middle" xml:space="preserve"></g>
+            </g>
+            <defs>
+               <linearGradient id="_GradL5C02X02X02X5D02X02X02X0NA_" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0.000" stop-color="rgb(93,96,105)" stop-opacity="1.0"/>
+                  <stop offset="1.000" stop-color="rgb(92,94,104)" stop-opacity="1.0"/>
+               </linearGradient>
+            </defs>
+            <g id="K2" fill="url(#_GradL8502X02X02X8702X02X02X0NA_)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(255,0,0)" stroke-opacity="1" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 777 37 L 828 16 880 36 902 87 881 139 830 161 778 140 757 89 777 37 777 37 Z " stroke="none"/>
+            </g>
+            <defs>
+               <linearGradient id="_GradL8502X02X02X8702X02X02X0NA_" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0.000" stop-color="rgb(135,138,149)" stop-opacity="1.0"/>
+                  <stop offset="1.000" stop-color="rgb(133,135,146)" stop-opacity="1.0"/>
+               </linearGradient>
+            </defs>
+            <g id="K3" fill="url(#_GradL5C02X02X02X4502X02X02X0NA_)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(255,0,0)" stroke-opacity="1" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 783 43 L 829 24 875 42 894 88 876 134 830 153 784 135 765 89 783 43 783 43 Z " stroke="none"/>
+            </g>
+            <defs>
+               <linearGradient id="_GradL5C02X02X02X4502X02X02X0NA_" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0.000" stop-color="rgb(69,72,79)" stop-opacity="1.0"/>
+                  <stop offset="1.000" stop-color="rgb(92,94,104)" stop-opacity="1.0"/>
+               </linearGradient>
+            </defs>
+            <g id="K4" fill="rgb(62,57,56)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(62,57,56)" stroke-opacity="1" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 773 88 C 773 57 798 32 829 32 860 32 886 57 886 88 886 119 860 145 829 145 798 145 773 119 773 88 L 773 88 Z " stroke="none"/>
+               <g fill="rgb(0,0,0)" fill-opacity="1" fill-rule="evenodd" stroke="none" font-family="Segoe UI" font-size="-12.00pt" text-anchor="middle" xml:space="preserve"></g>
+            </g>
+            <g id="xcustom484" fill="rgb(232,84,100)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(255,0,0)" stroke-opacity="1" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 777 88 C 777 59 800 36 829 36 859 36 882 59 882 88 882 118 859 141 829 141 800 141 777 118 777 88 L 777 88 Z " stroke="none"/>
+            </g>
+            <g id="xcustom485" fill="url(#_GradLFF02X02X02XCD02X02X02X0NA_)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(255,0,0)" stroke-opacity="1" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 782 89 C 782 62 803 41 830 41 857 41 878 62 878 89 878 116 857 137 830 137 803 137 782 116 782 89 L 782 89 Z " stroke="none"/>
+               <g fill="rgb(0,0,0)" fill-opacity="1" fill-rule="evenodd" stroke="none" font-family="Segoe UI" font-size="-12.00pt" text-anchor="middle" xml:space="preserve"></g>
+            </g>
+            <defs>
+               <linearGradient id="_GradLFF02X02X02XCD02X02X02X0NA_" x1="1" y1="0" x2="0" y2="1">
+                  <stop offset="0.000" stop-color="rgb(255,101,101)" stop-opacity="1.0"/>
+                  <stop offset="1.000" stop-color="rgb(205,115,107)" stop-opacity="1.0"/>
+               </linearGradient>
+            </defs>
+            <g id="xcustom486" fill="rgb(244,71,88)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(255,0,0)" stroke-opacity="1" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 806 89 C 806 75 816 65 830 65 843 65 854 75 854 89 854 102 843 113 830 113 816 113 806 102 806 89 L 806 89 Z " stroke="none"/>
+            </g>
+            <g id="xcustom487" fill="url(#_GradLFF02X02X02X9D02X02X02X0NA_)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(255,0,0)" stroke-opacity="1" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 809 89 C 809 77 818 68 830 68 841 68 851 77 851 89 851 100 841 110 830 110 818 110 809 100 809 89 L 809 89 Z " stroke="none"/>
+            </g>
+            <defs>
+               <linearGradient id="_GradLFF02X02X02X9D02X02X02X0NA_" x1="1" y1="0" x2="0" y2="1">
+                  <stop offset="0.000" stop-color="rgb(255,101,101)" stop-opacity="1.0"/>
+                  <stop offset="1.000" stop-color="rgb(157,61,53)" stop-opacity="1.0"/>
+               </linearGradient>
+            </defs>
+            <g id="xcustom488" fill="rgb(255,255,255)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(255,0,0)" stroke-opacity="1" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 799 129 C 799 125 812 123 829 123 846 123 860 125 860 129 860 132 846 140 829 140 812 140 799 132 799 129 L 799 129 Z " stroke="none"/>
+            </g>
+            <g id="xcustom489" fill="url(#_GradLFF02X02X02XD902X02X02X0NA_)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(255,0,0)" stroke-opacity="1" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 778 88 C 778 59 801 36 830 36 860 36 883 59 883 88 883 118 860 86 830 86 801 86 778 118 778 88 L 778 88 Z " stroke="none"/>
+               <g fill="rgb(0,0,0)" fill-opacity="1" fill-rule="evenodd" stroke="none" font-family="Segoe UI" font-size="-12.00pt" text-anchor="middle" xml:space="preserve"></g>
+            </g>
+            <defs>
+               <linearGradient id="_GradLFF02X02X02XD902X02X02X0NA_" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0.000" stop-color="rgb(255,255,255)" stop-opacity="1.0"/>
+                  <stop offset="1.000" stop-color="rgb(217,217,217)" stop-opacity="1.0"/>
+               </linearGradient>
+            </defs>
+            <g id="xcustom496" fill="rgb(133,135,146)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(255,0,0)" stroke-opacity="1" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 669 129 L 680 129 C 699 129 714 146 714 167 L 714 243 C 714 264 699 281 680 281 L 669 281 C 650 281 636 264 636 243 L 636 167 C 636 146 650 129 669 129 L 669 129 Z " stroke="none"/>
+               <g fill="rgb(0,0,0)" fill-opacity="1" fill-rule="evenodd" stroke="none" font-family="Segoe UI" font-size="-12.00pt" text-anchor="middle" xml:space="preserve"></g>
+            </g>
+            <g id="xcustom497" fill="rgb(74,77,87)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(255,0,0)" stroke-opacity="1" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 670 141 L 679 141 C 693 141 705 155 705 173 L 705 237 C 705 254 693 269 679 269 L 670 269 C 656 269 645 254 645 237 L 645 173 C 645 155 656 141 670 141 L 670 141 Z " stroke="none"/>
+            </g>
+            <g id="xcustom498" fill="rgb(182,7,23)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(255,0,0)" stroke-opacity="1" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 670 144 L 679 144 C 692 144 702 157 702 174 L 702 236 C 702 253 692 266 679 266 L 670 266 C 657 266 647 253 647 236 L 647 174 C 647 157 657 144 670 144 L 670 144 Z " stroke="none"/>
+            </g>
+            <g id="xcustom499" fill="rgb(233,0,0)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(255,0,0)" stroke-opacity="1" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 671 147 L 678 147 C 690 147 699 160 699 176 L 699 234 C 699 250 690 263 678 263 L 671 263 C 659 263 650 250 650 234 L 650 176 C 650 160 659 147 671 147 L 671 147 Z " stroke="none"/>
+            </g>
+            <g id="xcustom500" fill="rgb(255,255,255)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(255,0,0)" stroke-opacity="1" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 680 144 C 666 144 666 267 680 267 693 267 703 253 703 236 L 703 174 C 703 157 693 144 680 144 L 680 144 Z " stroke="none"/>
+            </g>
+            <g id="xcustom501" fill="rgb(255,255,255)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(255,0,0)" stroke-opacity="1" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 698 164 C 699 167 700 171 700 175 L 700 233 C 700 240 698 246 695 251 694 253 693 255 691 256 689 260 697 161 698 164 L 698 164 Z " stroke="none"/>
+            </g>
+            <g id="Edit895" fill="rgb(215,215,215)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 253 511 L 353 511 353 535 253 535 253 511 Z "/>
+               <g fill="rgb(0,0,0)" fill-opacity="1" fill-rule="evenodd" stroke="none" font-family="Segoe UI" font-size="-12.00pt" text-anchor="middle" xml:space="preserve">
+                  <text x= "302" y= "528" >Text</text>
+               </g>
+            </g>
+            <g id="SLabel2023" fill="rgb(0,0,0)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(0,255,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 252 470 L 352 470 352 496 252 496 252 470 Z "/>
+               <g fill="rgb(0,255,0)" fill-opacity="1" fill-rule="evenodd" stroke="none" font-family="Segoe UI" font-size="9.00pt" font-weight="bold" text-anchor="middle" xml:space="preserve">
+                  <text id="text_127974300" x= "302" y= "486" >####.##</text>
+               </g>
+            </g>
+            <g id="RoundRect1656" fill="rgb(255,255,255)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 623 405 L 591 405 C 577 405 564 392 564 378 L 564 324 C 564 310 577 297 591 297 L 655 297 C 669 297 682 310 682 324 L 682 378 C 682 392 669 405 655 405 L 623 405 Z "/>
+            </g>
+            <g id="hmithermo1" fill="rgb(225,225,225)" fill-opacity="1" fill-rule="evenodd" stroke="rgb(195,195,195)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10">
+               <path d="M 438 259 L 525 259 525 514 438 514 438 259 Z "/>
+               <rect x="438" y="259" width="87" height="255" stroke="rgb(195,195,195)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="rgb(225,225,225)" fill-opacity="1" fill-rule="evenodd"/>
+            </g>
+            
+         </svg>
+         <input type="text" id="numberData" value="0">
+         <button id="submit" name="submit" onclick="chagedata()">Submit</button>
+         <script>
+             var  client;
+             setTimeout(function(){ startConnect(); }, 1000);
+             
+            var client1_message = {};
+            function startConnect() {
+                clientID = "clientID-" + parseInt(Math.random() * 100);
+
+                var port = 8080;
+                client = new Paho.MQTT.Client('test.mosquitto.org', Number(port), clientID);
+
+                client.onConnectionLost = onConnectionLost;
+                client.onMessageArrived = onMessageArrived;
+
+                client.connect({ 
+                    onSuccess: onConnect,
+                });
+            }
+            function onConnect() {
+                client.subscribe("/client2_send");
+
+                client.subscribe("/client1_send_thermometer");
+                    
+                console.log("onConnect");
+            }
+
+            function client1_message_send(){
+                    message = new Paho.MQTT.Message(JSON.stringify(client1_message));
+                    message.destinationName = '/client1_send';
+                    client.send(message);
+                    console.log(client1_message)
+            }
+            
+            function btnClickXcustom60(send_data=""){
+               
+               var Xcustom60Btn = d3.select("#mySVG #xcustom60")
+               if(send_data == '')
+               {
+                
+                var fill = Xcustom60Btn.attr("fill");
+                if(fill == "green") {
+                    
+                    client1_message.btn = 'off',
+                    client1_message.btn_color= 'red'
+                    
+                    Xcustom60Btn.attr("fill","red");
+                }else{
+                    client1_message.btn = 'on',
+                    client1_message.btn_color= 'green'
+                    
+                    Xcustom60Btn.attr("fill","green");
+                }
+
+                client1_message_send();
+                
+
+                //client.subscribe("client1_send");
+            
+               }else{
+                   console.log('send_data',send_data)
+                    Xcustom60Btn.attr("fill",send_data);
+               }
+            }
+            
+            function thermoMeter(min,max,initialValue){
+			
+                var thermoMeterLevelWidth=72
+                var thermoMeterLevelHeight=231
+                
+                var minMaxSpan=max
+                
+                topPadding = 23;
+                botPadding = 6;
+                
+                var levelBarHeight=thermoMeterLevelHeight-topPadding-botPadding
+                //var levelBarWidth=thermoMeterLevelWidth;
+                
+                var pxPerValHt= (levelBarHeight/minMaxSpan)
+                
+                var initValueY=levelBarHeight-pxPerValHt*initialValue+topPadding
+
+                var Height = levelBarHeight-initValueY+topPadding;
+                
+                var  thermoMeterLevel = d3.select("#mySVG #thermometer")
+
+                thermoMeterLevel.attr("y", levelBarHeight+topPadding )
+                    .attr("height", 0 )
+                    .transition().duration(800)
+                    .attr("height",levelBarHeight-initValueY+topPadding )	
+                    .attr("y", initValueY )
+            }
+         
+            function onConnectionLost(responseObject) {
+                console.log('responseObject',responseObject)
+            }
+
+
+            function onMessageArrived(message) {
+
+                var receive_data = JSON.parse(message.payloadString)
+                if(receive_data.type == "switch"){
+                    btnClickXcustom60(receive_data.color)
+                }else if(receive_data.type == "thermometer"){
+                    thermoMeter(0,100,receive_data.value)
+                }
+                
+                console.log("onMessageArrived: " + message.payloadString);
+            }
+
+            function startDisconnect() {
+                client.disconnect();
+                console.log('Disconnected')
+            }
+
+        </script>
+
+    </body>
+</html>
